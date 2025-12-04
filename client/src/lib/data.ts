@@ -17,7 +17,7 @@ export const COMPANY_INFO = {
   founded: 2020,
   experience: "30+",
   logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6921b7b75b1721e7c7ec376c/a1bd91b3f_ProfilePhoto.png",
-  heroImage: "/assets/realistic-burgundy-gold-background-vector-600nw-2463614061.jpg"
+  heroImage: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6921b7b75b1721e7c7ec376c/9e5c46186_a.jpg"
 };
 
 export const NAV_LINKS = [
@@ -225,31 +225,31 @@ export const TEAM = [
     name: "Thabani Zulu CA(SA)",
     role: "Director",
     bio: "A visionary leader with extensive experience in financial management and corporate governance.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
+    image: "https://stella-lumen.com/wp-content/uploads/2025/10/IMG_1287.jpg"
   },
   {
     name: "Lusanda Ntloko",
     role: "Senior Consultant",
     bio: "Specialist in risk management and internal audit processes.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+    image: "https://stella-lumen.com/wp-content/uploads/2025/10/IMG_1245.jpg"
   },
   {
     name: "Lizo Shongwe",
     role: "Technical Lead",
     bio: "Expert in developing customized business solutions and technical modeling.",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=800"
+    image: "https://stella-lumen.com/wp-content/uploads/2025/10/IMG_1257.jpg"
   },
   {
     name: "Amahle Mtolo",
     role: "Business Analyst",
     bio: "Dedicated to analyzing business models and optimizing performance.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800"
+    image: "https://stella-lumen.com/wp-content/uploads/2025/10/IMG_1219.jpg"
   },
   {
     name: "Sinethemba Zwane",
     role: "Client Relations",
     bio: "Ensuring client satisfaction and successful project roll-outs.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800"
+    image: "https://stella-lumen.com/wp-content/uploads/2025/10/IMG_128711.png"
   },
   {
     name: "Londiwe Mahlangu",
@@ -268,31 +268,31 @@ export const TEAM = [
 export const BLOG_POSTS = [
   {
     id: 1,
-    title: "RIGEL PERSONAL: EXERCISING FULL PERSONAL CONTROL OVER YOUR FINANCES",
-    excerpt: "Exercising full personal control over your finances is crucial in today's economic climate.",
+    title: "How to create a Logo like a Pro",
+    excerpt: "Key strategies for branding and visual identity in the corporate world.",
     date: "Oct 12, 2023",
-    image: "/assets/Rigel-Personal-Package-300x300.png"
+    image: "https://stella-lumen.com/wp-content/uploads/2017/06/post2-1-1-300x167.jpg"
   },
   {
     id: 2,
-    title: "How to create a Logo like a Pro",
-    excerpt: "Key strategies for branding and visual identity in the corporate world.",
+    title: "Principles of Coldness",
+    excerpt: "Understanding the dynamics of professional detachment and objective decision making.",
     date: "Sep 28, 2023",
-    image: "/assets/Venus-Package-300x300.jpg"
+    image: "https://stella-lumen.com/wp-content/uploads/2017/06/post3-1-1-300x167.jpg"
   },
   {
     id: 3,
-    title: "Principles of Coldness",
-    excerpt: "Understanding the dynamics of professional detachment and objective decision making.",
+    title: "Much Space in World",
+    excerpt: "Exploring market gaps and opportunities for expansion in the global economy.",
     date: "Sep 15, 2023",
-    image: "/assets/Polaris-Package-300x300.jpg"
+    image: "https://stella-lumen.com/wp-content/uploads/2017/06/post4-1-1-300x167.jpg"
   },
   {
     id: 4,
-    title: "Much Space in World",
-    excerpt: "Exploring market gaps and opportunities for expansion in the global economy.",
+    title: "RIGEL PERSONAL: EXERCISING FULL PERSONAL CONTROL OVER YOUR FINANCES",
+    excerpt: "Exercising full personal control over your finances is crucial in today's economic climate.",
     date: "Aug 10, 2023",
-    image: "/assets/Astro-300x300.jpg"
+    image: "https://stella-lumen.com/wp-content/uploads/2023/07/slide-1-min-1-300x169.jpg"
   }
 ];
 
