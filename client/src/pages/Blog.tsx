@@ -47,12 +47,14 @@ export default function Blog() {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover"
-                    onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://via.placeholder.com/600x400?text=Cover+Image"; }}
-                  />
+                  <a href={post.href} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://via.placeholder.com/600x400?text=Cover+Image"; }}
+                    />
+                  </a>
                 )}
               </div>
               <div className="p-6 flex-grow flex flex-col">
