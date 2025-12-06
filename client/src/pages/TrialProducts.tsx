@@ -100,9 +100,11 @@ export default function TrialProducts() {
                     I agree to the <a href="#" className="underline text-primary">EULA</a>
                   </label>
                 </div>
-                <Button className="w-full bg-destructive hover:bg-destructive/90 text-white font-bold py-6">
-                  <Download className="mr-2 w-5 h-5" /> Download Installer (.exe)
-                </Button>
+                <a href="https://stella-lumen.com/projects/rigel" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-destructive hover:bg-destructive/90 text-white font-bold py-6">
+                    <Download className="mr-2 w-5 h-5" /> Download Installer (.exe)
+                  </Button>
+                </a>
               </div>
             </motion.div>
 
@@ -128,11 +130,11 @@ export default function TrialProducts() {
                     I agree to the <a href="#" className="underline text-primary">EULA</a>
                   </label>
                 </div>
-                <Link href="/shop">
+                <a href="https://stella-lumen.com/projects/rigel" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 cursor-pointer">
-                    <ShoppingCart className="mr-2 w-5 h-5" /> Go to Cart (R350.00)
+                    <ShoppingCart className="mr-2 w-5 h-5" /> Buy Full Version
                   </Button>
-                </Link>
+                </a>
               </div>
             </motion.div>
           </div>
