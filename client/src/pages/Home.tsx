@@ -49,11 +49,6 @@ export default function Home() {
 
       {/* Services Overview */}
       <section className="py-20 bg-primary text-white relative overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
-          <div className="absolute -top-24 -left-24 w-96 h-96 bg-secondary rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-900 rounded-full blur-3xl" />
-        </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -82,7 +77,7 @@ export default function Home() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 hover:bg-white/10 transition-colors"
+                    className="bg-white/5 border border-white/10 p-6 transition-colors"
                   >
                     <div className="bg-secondary/20 w-12 h-12 flex items-center justify-center rounded-full mb-4">
                       <IconComponent className="text-secondary w-6 h-6" />

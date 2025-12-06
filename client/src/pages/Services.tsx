@@ -112,10 +112,10 @@ export default function ServicesPage() {
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-2xl">
               <img 
-                src="https://cdn.pixabay.com/photo/2017/06/23/10/59/code-2434271_1280.jpg" 
-                alt="Capabilities" 
+                src="/assets/our-capabilities.jpg" 
+                alt="Our Capabilities" 
                 className="w-full h-full object-cover"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://images.unsplash.com/photo-1553877604-8155546f8e62?auto=format&fit=crop&q=80&w=800"; }}
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/assets/our-capabilities.jpg"; }}
               />
             </div>
           </div>
