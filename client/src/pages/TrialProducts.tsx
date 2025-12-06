@@ -140,11 +140,11 @@ export default function TrialProducts() {
                     I agree to the <a href="https://stella-lumen.com/agreements/RIGEL-EULA.pdf" target="_blank" rel="noopener noreferrer" className="underline text-primary">EULA</a>
                   </label>
                 </div>
-                <a href="https://stella-lumen.com/product-category/small-and-medium-enterprises?add-to-cart=1315&quantity=1" target="_blank" rel="noopener noreferrer">
+                <Link href="/checkout">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 cursor-pointer">
-                    <ShoppingCart className="mr-2 w-5 h-5" /> Buy Full Version
+                    <ShoppingCart className="mr-2 w-5 h-5" /> Proceed to Checkout
                   </Button>
-                </a>
+                </Link>
               </div>
             </motion.div>
 
