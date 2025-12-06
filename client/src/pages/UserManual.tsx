@@ -28,9 +28,18 @@ export default function UserManual() {
                 Download the full PDF manual containing step-by-step instructions, troubleshooting tips, and best practices.
               </p>
             </div>
-            <Button className="shrink-0 bg-primary hover:bg-primary/90">
-              <Download className="mr-2 w-4 h-4" /> Download PDF
-            </Button>
+            <div className="flex gap-3">
+              <a href="https://stella-lumen.com/downloads/rigel-business-beta/UserManual.pdf" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="shrink-0">
+                  View PDF
+                </Button>
+              </a>
+              <a href="https://stella-lumen.com/downloads/rigel-business-beta/UserManual.pdf" target="_blank" rel="noopener noreferrer" download>
+                <Button className="shrink-0 bg-primary hover:bg-primary/90">
+                  <Download className="mr-2 w-4 h-4" /> Download PDF
+                </Button>
+              </a>
+            </div>
           </div>
 
           {/* Video Tutorials */}

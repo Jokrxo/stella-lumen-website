@@ -74,9 +74,14 @@ export default function TrialProducts() {
                   <FileText className="w-4 h-4" /> Release Notes
                 </Button>
               </a>
-              <a href="https://stella-lumen.com/rigel-business-user-manual/" target="_blank" rel="noopener noreferrer">
+              <Link href="/rigel-business-user-manual">
                 <Button variant="outline" className="gap-2 cursor-pointer">
-                  <FileText className="w-4 h-4" /> User Manual
+                  <FileText className="w-4 h-4" /> User Manual Page
+                </Button>
+              </Link>
+              <a href="https://stella-lumen.com/downloads/rigel-business-beta/UserManual.pdf" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="gap-2 cursor-pointer">
+                  <FileText className="w-4 h-4" /> View PDF
                 </Button>
               </a>
             </div>
@@ -135,13 +140,35 @@ export default function TrialProducts() {
                     I agree to the <a href="https://stella-lumen.com/agreements/RIGEL-EULA.pdf" target="_blank" rel="noopener noreferrer" className="underline text-primary">EULA</a>
                   </label>
                 </div>
-                <a href="https://stella-lumen.com/projects/rigel" target="_blank" rel="noopener noreferrer">
+                <a href="https://stella-lumen.com/product-category/small-and-medium-enterprises?add-to-cart=1315&quantity=1" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 cursor-pointer">
                     <ShoppingCart className="mr-2 w-5 h-5" /> Buy Full Version
                   </Button>
                 </a>
               </div>
             </motion.div>
+
+            {/* Subscription Agreement Section */}
+            <section className="mt-12">
+              <div className="bg-white border border-border p-8 rounded-lg shadow-md">
+                <h3 className="text-2xl font-serif font-bold text-primary mb-3">Subscription Agreement for Rigel Business</h3>
+                <p className="text-muted-foreground mb-6">
+                  Review the full subscription agreement before proceeding with your purchase.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <a href="https://stella-lumen.com/agreements/RIGEL-EULA.pdf" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="gap-2">
+                      <FileText className="w-4 h-4" /> View Full Agreement
+                    </Button>
+                  </a>
+                  <a href="https://stella-lumen.com/agreements/RIGEL-EULA.pdf" target="_blank" rel="noopener noreferrer" download>
+                    <Button className="gap-2 bg-primary text-white hover:bg-primary/90">
+                      <Download className="w-4 h-4" /> Download PDF
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
