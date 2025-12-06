@@ -13,9 +13,7 @@ export default function Hero() {
           alt="Galaxy Background"
           className="w-full h-full object-cover"
         />
-        {/* Overlay - Gradient Burgundy */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent mix-blend-multiply" />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
       </div>
 
       {/* Content */}
@@ -49,16 +47,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white flex flex-col items-center gap-2"
-      >
-        <span className="text-xs uppercase tracking-widest text-white/60">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent" />
-      </motion.div>
+      
     </section>
   );
 }

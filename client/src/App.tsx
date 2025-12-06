@@ -21,6 +21,7 @@ import UserManual from "@/pages/UserManual";
 import Internship from "@/pages/Internship";
 import Blog from "@/pages/Blog";
 import Gallery from "@/pages/Gallery";
+import ProductDetails from "@/pages/ProductDetails";
 
 function Router() {
   return (
@@ -31,6 +32,7 @@ function Router() {
         <Route path="/team" component={Team} />
         <Route path="/shop" component={Shop} />
         <Route path="/product-category" component={Shop} />
+        <Route path="/product/:id" component={ProductDetails} />
         <Route path="/team-2" component={Services} />
         <Route path="/contact" component={Contact} />
         <Route path="/cart" component={Cart} />

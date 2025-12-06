@@ -40,7 +40,7 @@
 :root {
   /* Brand Colors */
   --brand-burgundy: 345 100% 25%; /* #800020 */
-  --brand-gold: 46 65% 52%; /* #D4AF37 */
+  --brand-gold: 43 74% 49%; /* #daa520 */
   
   --background: 0 0% 100%;
   --foreground: 345 100% 15%; /* Darker burgundy for text */
@@ -118,5 +118,14 @@
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-bold tracking-tight;
+  }
+  p, li, span, div {
+    @apply font-sans;
+  }
+  p {
+    @apply text-justify;
+  }
+  a:hover {
+    @apply text-secondary;
   }
 }

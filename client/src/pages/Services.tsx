@@ -125,11 +125,23 @@ export default function ServicesPage() {
           <p className="max-w-2xl mx-auto text-white/80 mb-10">
             Our flagship accounting solution designed specifically for SMEs. Streamline your payroll, SARS reports, and financial statements.
           </p>
-          <Link href="/shop">
+          <Link href="/projects">
             <Button size="lg" className="bg-secondary text-primary hover:bg-white font-bold px-10 py-6">
               Try Rigel Business
             </Button>
           </Link>
+        </div>
+      </section>
+
+      {/* Clarification: Specialized Capability vs Our Capabilities */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="bg-white border border-border p-6 rounded-lg">
+            <h3 className="text-2xl font-serif font-bold text-primary mb-3">Specialized Capability vs Our Capabilities</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Specialized Capabilities are focused, solution-specific competencies showcased within each service or product area. They demonstrate depth for a given offering. Our Capabilities are organization-wide strengths—methods, frameworks, and skills we apply across projects. In short: Specialized Capabilities are vertical, and Our Capabilities are horizontal.
+            </p>
+          </div>
         </div>
       </section>
     </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PRODUCTS } from "@/lib/data";
 import ProductCard from "@/components/ui/product-card";
@@ -10,6 +10,14 @@ export default function Shop() {
   // Extract unique categories
   const categories = Array.from(new Set(PRODUCTS.map(p => p.category)));
   const [activeCategory, setActiveCategory] = useState<string>("All");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get("category");
+    if (cat && categories.includes(cat)) {
+      setActiveCategory(cat);
+    }
+  }, [categories]);
 
   const filteredProducts = activeCategory === "All" 
     ? PRODUCTS 
@@ -87,11 +95,16 @@ export default function Shop() {
           <h2 className="text-3xl font-serif font-bold text-primary mb-8 border-b pb-4">Detailed Category View</h2>
           
           <Accordion.Root type="multiple" className="space-y-4">
-            {categories.map(category => (
+            {categories.map((category, idx) => (
               <Accordion.Item key={category} value={category} className="border border-border rounded-lg overflow-hidden">
                 <Accordion.Header>
                   <Accordion.Trigger className="flex justify-between items-center w-full p-6 bg-white hover:bg-muted transition-colors text-left group">
-                    <span className="text-xl font-bold text-primary">{category}</span>
+                    <div className="flex items.center gap-4">
+                      <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">
+                        {idx + 1}
+                      </div>
+                      <span className="text-xl font-bold text-primary">{category}</span>
+                    </div>
                     <ChevronDown className="w-5 h-5 text-muted-foreground transition-transform duration-300 group-data-[state=open]:rotate-180" />
                   </Accordion.Trigger>
                 </Accordion.Header>

@@ -29,6 +29,14 @@ export default function TrialProducts() {
           {/* Product Info */}
           <div>
             <h2 className="text-3xl font-serif font-bold text-primary mb-6">Rigel Business Beta</h2>
+            <div className="mb-6 w-full max-w-sm">
+              <img
+                src="/assets/Rigel-Package-300x300.jpg"
+                alt="Rigel Business"
+                className="w-full h-auto object.contain border border-border rounded"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://via.placeholder.com/300?text=Rigel+Business"; }}
+              />
+            </div>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
               Our flagship accounting software designed specifically for South African SMEs. 
               Rigel Business simplifies complex financial tasks, allowing you to focus on growing your business.

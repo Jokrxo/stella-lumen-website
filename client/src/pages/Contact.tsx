@@ -92,16 +92,23 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Business Hours</h3>
-                  <p className="text-muted-foreground">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                  <p className="text-muted-foreground">Monday - Friday: 08:00 - 16:30</p>
                   <p className="text-muted-foreground">Saturday - Sunday: Closed</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-12">
-               {/* Map Placeholder */}
-               <div className="w-full h-64 bg-muted rounded-lg flex items-center justify-center border border-border">
-                 <span className="text-muted-foreground">Google Maps Integration</span>
+               <div className="w-full h-64 rounded-lg overflow-hidden border border-border">
+                 <iframe
+                   title="Stella Lumen Location"
+                   src="https://www.google.com/maps?q=52+Norfolk+Terrace,+Westville,+KwaZulu+Natal,+3629&output=embed"
+                   width="100%"
+                   height="100%"
+                   style={{ border: 0 }}
+                   loading="lazy"
+                   referrerPolicy="no-referrer-when-downgrade"
+                 />
                </div>
             </div>
           </div>

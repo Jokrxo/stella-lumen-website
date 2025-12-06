@@ -35,13 +35,13 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-serif font-bold text-primary mb-6">Our Background</h2>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Founded in {COMPANY_INFO.founded}, {COMPANY_INFO.name} brings together over {COMPANY_INFO.experience} years of combined experience in the financial and corporate sectors. We are dedicated to illuminating the path to success for businesses of all sizes.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Our team is comprised of seasoned professionals who are passionate about governance, risk management, and financial optimization. We believe in a hands-on approach, working closely with our clients to deliver tailored solutions that drive real results.
-            </p>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-6">Our Background</h2>
+          <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+            Founded in {COMPANY_INFO.founded}, {COMPANY_INFO.name} brings together over {COMPANY_INFO.experience} years of combined experience in the financial and corporate sectors. We are dedicated to illuminating the path to success for businesses of all sizes.
+          </p>
+          <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+            Our team is comprised of seasoned professionals who are passionate about governance, risk management, and financial optimization. We believe in a hands-on approach, working closely with our clients to deliver tailored solutions that drive real results.
+          </p>
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
@@ -70,7 +70,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="flex items-center gap-4 bg-white/10 p-6 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-colors"
+                className="flex items-center gap-4 bg-secondary/10 border border-secondary p-6 rounded-lg backdrop-blur-sm hover:bg-secondary/20 transition-colors"
               >
                 <CheckCircle2 className="text-secondary w-6 h-6 shrink-0" />
                 <span className="text-lg font-medium">{spec}</span>
@@ -85,20 +85,23 @@ export default function About() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl font-serif font-bold text-primary mb-12">Our Business Model</h2>
           <div className="flex flex-wrap justify-center gap-4 lg:gap-8">
-            {businessModelSteps.map((step, index) => (
-              <div key={step.title} className="flex items-center">
-                <div className="flex flex-col items-center max-w-[200px]">
-                  <div className="w-16 h-16 rounded-full bg-secondary text-primary font-bold text-xl flex items-center justify-center mb-4 shadow-lg">
+              {businessModelSteps.map((step, index) => (
+                <div key={step.title} className="flex items-center">
+                  <div className="flex flex-col items-center max-w-[200px]">
+                  <div className="w-16 h-16 rounded-full bg-primary text-white font-bold text-xl flex items-center justify-center mb-2 shadow-lg">
                     {index + 1}
+                  </div>
+                  <div className="text-secondary mb-2">
+                    <CheckCircle2 className="w-5 h-5" />
                   </div>
                   <h4 className="font-bold text-lg mb-2">{step.title}</h4>
                   <p className="text-sm text-muted-foreground">{step.desc}</p>
+                  </div>
+                  {index < businessModelSteps.length - 1 && (
+                    <div className="hidden lg:block w-16 h-1 bg-muted mx-4 self-start mt-8" />
+                  )}
                 </div>
-                {index < businessModelSteps.length - 1 && (
-                  <div className="hidden lg:block w-16 h-1 bg-muted mx-4 self-start mt-8" />
-                )}
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </section>

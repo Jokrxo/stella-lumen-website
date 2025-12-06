@@ -37,7 +37,7 @@ export default function Gallery() {
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                        <ZoomIn className="text-white w-10 h-10" />
                     </div>
-                    <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute bottom-0 left-0 w-full p-4 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p className="text-white font-medium">{img.alt}</p>
                       <p className="text-secondary text-xs uppercase">{img.category}</p>
                     </div>

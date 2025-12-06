@@ -30,9 +30,10 @@ export default function ProductCard({ product }: ProductCardProps) {
           src={product.image}
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://via.placeholder.com/600x400?text=Image+Unavailable"; }}
         />
         <div className="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-          <Link href={`/shop`}>
+          <Link href={`/product/${product.id}`}>
             <Button variant="secondary" size="sm" className="rounded-full cursor-pointer">
               View Details
             </Button>

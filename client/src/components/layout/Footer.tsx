@@ -20,10 +20,10 @@ export default function Footer() {
               {COMPANY_INFO.tagline}. delivering excellence in Strategic Consulting, Innovation Advisory, and Talent Development.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href={COMPANY_INFO.socials.linkedin} className="text-white/70 hover:text-secondary transition-colors"><Linkedin size={20} /></a>
-              <a href={COMPANY_INFO.socials.facebook} className="text-white/70 hover:text-secondary transition-colors"><Facebook size={20} /></a>
-              <a href={COMPANY_INFO.socials.youtube} className="text-white/70 hover:text-secondary transition-colors"><Youtube size={20} /></a>
-              <a href={COMPANY_INFO.socials.instagram} className="text-white/70 hover:text-secondary transition-colors"><Instagram size={20} /></a>
+              <a href={COMPANY_INFO.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-secondary transition-colors"><Linkedin size={20} /></a>
+              <a href={COMPANY_INFO.socials.facebook} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-secondary transition-colors"><Facebook size={20} /></a>
+              <a href={COMPANY_INFO.socials.youtube} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-secondary transition-colors"><Youtube size={20} /></a>
+              <a href={COMPANY_INFO.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-secondary transition-colors"><Instagram size={20} /></a>
             </div>
           </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
               {NAV_LINKS.slice(0, 5).map(link => (
                 <li key={link.label}>
                   <Link href={link.href} className="text-white/70 hover:text-secondary transition-colors text-sm flex items-center gap-2 cursor-pointer">
-                      <span className="w-1 h-1 bg-secondary rounded-full"></span>
+                      <span className="w-2 h-2 bg-secondary rounded-full"></span>
                       {link.label}
                   </Link>
                 </li>
