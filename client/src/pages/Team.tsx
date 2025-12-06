@@ -32,7 +32,7 @@ export default function Team() {
                     className="w-full h-full object-cover object-top"
                     onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://via.placeholder.com/800x600?text=Team+Image"; }}
                   />
-                  <div className="absolute bottom-0 left-0 w-full bg-black/60 p-6 pt-20">
+                  <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 pt-20">
                     <h3 className="text-white font-serif font-bold text-2xl">{member.name}</h3>
                     <p className="text-secondary font-medium">{member.role}</p>
                   </div>

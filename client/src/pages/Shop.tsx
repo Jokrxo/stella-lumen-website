@@ -100,7 +100,7 @@ export default function Shop() {
                 <Accordion.Header>
                   <Accordion.Trigger className="flex justify-between items-center w-full p-6 bg-white hover:bg-muted transition-colors text-left group">
                     <div className="flex items.center gap-4">
-                      <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center font-bold">
                         {idx + 1}
                       </div>
                       <span className="text-xl font-bold text-primary">{category}</span>

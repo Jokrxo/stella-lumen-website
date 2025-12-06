@@ -50,9 +50,9 @@ export default function About() {
             className="relative h-[400px] bg-muted rounded-lg overflow-hidden shadow-xl"
           >
              <img 
-              src="https://stella-lumen.com/wp-content/uploads/2023/07/abt-3.jpg" 
-              alt="Team Meeting" 
-              className="w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" 
+               alt="Team Meeting" 
+               className="w-full h-full object-cover"
              />
           </motion.div>
         </div>

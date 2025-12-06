@@ -129,11 +129,11 @@ export default function ServicesPage() {
           <p className="max-w-2xl mx-auto text-white/80 mb-10">
             Our flagship accounting solution designed specifically for SMEs. Streamline your payroll, SARS reports, and financial statements.
           </p>
-          <a href="https://stella-lumen.com/projects/rigel" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-secondary text-primary hover:bg-white font-bold px-10 py-6">
+          <Link href="/projects">
+            <Button size="lg" className="bg-secondary text-primary hover:bg-white font-bold px-10 py-6 cursor-pointer">
               Try Rigel Business
             </Button>
-          </a>
+          </Link>
         </div>
       </section>
 
