@@ -56,20 +56,25 @@ export default function TrialProducts() {
                <div className="flex items-start gap-3">
                  <AlertTriangle className="text-yellow-600 w-6 h-6 shrink-0" />
                  <div>
-                   <h4 className="font-bold text-yellow-800 mb-1">Beta Warning</h4>
-                   <p className="text-sm text-yellow-700">
-                     This is a beta version. While we strive for stability, you may encounter bugs. 
-                     Please report any issues to our support team.
-                   </p>
+                  <h4 className="font-bold text-yellow-800 mb-1">
+                    Beta Warning
+                    <a href="https://stella-lumen.com/downloads/rigel-business-beta/BETA_WARNING.txt" target="_blank" rel="noopener noreferrer" className="ml-2 underline text-primary text-sm">View details</a>
+                  </h4>
+                  <p className="text-sm text-yellow-700">
+                    This is a beta version. While we strive for stability, you may encounter bugs. 
+                    Please report any issues to our support team.
+                  </p>
                  </div>
                </div>
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button variant="outline" className="gap-2">
-                <FileText className="w-4 h-4" /> Release Notes
-              </Button>
-              <a href="https://stella-lumen.com/rigel-business-user-manual">
+              <a href="https://stella-lumen.com/downloads/rigel-business-beta/ReleaseNotes.txt" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="gap-2">
+                  <FileText className="w-4 h-4" /> Release Notes
+                </Button>
+              </a>
+              <a href="https://stella-lumen.com/rigel-business-user-manual/" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="gap-2 cursor-pointer">
                   <FileText className="w-4 h-4" /> User Manual
                 </Button>
@@ -97,10 +102,10 @@ export default function TrialProducts() {
                 <div className="flex items-center gap-2">
                   <input type="checkbox" id="eula-trial" className="rounded border-gray-300" />
                   <label htmlFor="eula-trial" className="text-sm text-muted-foreground">
-                    I agree to the <a href="#" className="underline text-primary">EULA</a>
+                    I agree to the <a href="https://stella-lumen.com/agreements/RIGEL-EULA.pdf" target="_blank" rel="noopener noreferrer" className="underline text-primary">EULA</a>
                   </label>
                 </div>
-                <a href="https://stella-lumen.com/projects/rigel" target="_blank" rel="noopener noreferrer">
+                <a href="https://stella-lumen.com/downloads/rigel-business-beta/" target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-destructive hover:bg-destructive/90 text-white font-bold py-6">
                     <Download className="mr-2 w-5 h-5" /> Download Installer (.exe)
                   </Button>
@@ -127,7 +132,7 @@ export default function TrialProducts() {
                 <div className="flex items-center gap-2">
                   <input type="checkbox" id="eula-full" className="rounded border-gray-300" />
                   <label htmlFor="eula-full" className="text-sm text-muted-foreground">
-                    I agree to the <a href="#" className="underline text-primary">EULA</a>
+                    I agree to the <a href="https://stella-lumen.com/agreements/RIGEL-EULA.pdf" target="_blank" rel="noopener noreferrer" className="underline text-primary">EULA</a>
                   </label>
                 </div>
                 <a href="https://stella-lumen.com/projects/rigel" target="_blank" rel="noopener noreferrer">
