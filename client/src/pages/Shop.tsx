@@ -5,6 +5,7 @@ import ProductCard from "@/components/ui/product-card";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp, Filter, ShoppingCart, ArrowRight } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
+import { WORDPRESS_PRODUCT_IDS } from "@/lib/data";
 import * as Accordion from "@radix-ui/react-accordion";
 
 export default function Shop() {
@@ -125,7 +126,7 @@ export default function Shop() {
                           </span>
                         </div>
                         <div className="self-end ml-auto">
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-2 flex-wrap">
                             <Button
                               size="sm"
                               className="rounded-none bg-primary text-white hover:bg-secondary hover:text-primary"
@@ -144,6 +145,17 @@ export default function Shop() {
                                   Enquire <ArrowRight className="w-4 h-4 ml-2" />
                                 </a>
                               </Button>
+                            )}
+                            {WORDPRESS_PRODUCT_IDS[p.id] && (
+                              <a
+                                href={`https://stella-lumen.com/?add-to-cart=${WORDPRESS_PRODUCT_IDS[p.id]}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <Button size="sm" variant="outline" className="rounded-none cursor-pointer">
+                                  Buy Now (WooCommerce)
+                                </Button>
+                              </a>
                             )}
                           </div>
                         </div>

@@ -3,6 +3,7 @@ import { PRODUCTS } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/lib/cart-context";
 import { ShoppingCart } from "lucide-react";
+import { WORDPRESS_PRODUCT_IDS } from "@/lib/data";
 import { Link } from "wouter";
 
 export default function ProductDetails() {
@@ -41,9 +42,18 @@ export default function ProductDetails() {
             <Button className="bg-primary text-white hover:bg-secondary hover:text-primary cursor-pointer" onClick={() => addToCart(product)}>
               <ShoppingCart className="w-4 h-4 mr-2" /> Add to Cart
             </Button>
-          <Link href="/cart">
-            <Button className="cursor-pointer">Go to Cart</Button>
-          </Link>
+            {WORDPRESS_PRODUCT_IDS[product.id] && (
+              <a
+                href={`https://stella-lumen.com/?add-to-cart=${WORDPRESS_PRODUCT_IDS[product.id]}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="cursor-pointer">Buy Now (WooCommerce)</Button>
+              </a>
+            )}
+            <Link href="/cart">
+              <Button className="cursor-pointer">Go to Cart</Button>
+            </Link>
           </div>
         </div>
       </div>

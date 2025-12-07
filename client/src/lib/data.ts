@@ -22,16 +22,16 @@ export const COMPANY_INFO = {
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { 
-    label: "About Us", 
+  {
+    label: "About Us",
     href: "/about-us",
     subItems: [
       { label: "About Stella Lumen", href: "/about-us" },
       { label: "Meet The Team", href: "/team" }
     ]
   },
-  { 
-    label: "Product Catalogue", 
+  {
+    label: "Product Catalogue",
     href: "/shop",
     subItems: [
       { label: "All Products", href: "/shop" },
@@ -117,7 +117,7 @@ export const PRODUCTS = [
     name: "RIGEL BUSINESS",
     category: "Small and Medium Enterprises",
     description: "Advanced yet simple SME finance management solution that updates accounts, ledgers, and statements in real time. Components: all financial modules in one platform; automated annual and monthly accounts; KPI; transaction listing/general ledger; trial balance; VAT calculations; project management accounts; invoicing/quotations; payroll with payslips; accounts summary reports.",
-    price: "R350",
+    price: "R550",
     image: "/assets/Rigel-Package-300x300.jpg",
     featured: true,
   },
@@ -227,6 +227,20 @@ export const PRODUCTS = [
     image: "/assets/Sirius-Package-300x300.jpg",
   },
 ];
+
+export const WORDPRESS_PRODUCT_IDS: Record<string, number> = {
+  "betelgeuse": 1600,
+  "epiphany": 1331,
+  "polaris": 1330,
+  "canopus": 1328,
+  "rigel-business": 1315,
+  "kielz": 1281,
+  "regulus": 203,
+  "tz-arietis": 201,
+  "dara": 199,
+  "venus": 198,
+  "rigel-personal": 197,
+};
 
 export const TEAM = [
   {

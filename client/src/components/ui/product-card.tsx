@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useCart } from "@/lib/cart-context";
 import { ShoppingCart, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import { WORDPRESS_PRODUCT_IDS } from "@/lib/data";
 
 interface ProductCardProps {
   product: {
@@ -50,7 +51,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.description}
         </p>
         
-        <div className="pt-4 border-t border-border mt-auto flex items-center justify-between">
+        <div className="pt-4 border-t border-border mt-auto flex items.center justify-between">
           <div className="text-lg font-bold text-primary">
           {product.price 
             ? (isPriceNumber ? `R${product.price}` : product.price)
@@ -73,6 +74,17 @@ export default function ProductCard({ product }: ProductCardProps) {
                   Enquire <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </Link>
+            )}
+            {WORDPRESS_PRODUCT_IDS[product.id] && (
+              <a
+                href={`https://stella-lumen.com/?add-to-cart=${WORDPRESS_PRODUCT_IDS[product.id]}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="sm" variant="outline" className="rounded-none cursor-pointer">
+                  Buy Now (WooCommerce)
+                </Button>
+              </a>
             )}
           </div>
         </div>
