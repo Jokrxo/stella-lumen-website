@@ -23,19 +23,19 @@ export default function Team() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden border border-border"
+                className="flex flex-col bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-border"
               >
-                <div className="h-80 overflow-hidden relative">
+                <div className="h-80 overflow-hidden">
                   <img 
                     src={member.image} 
                     alt={member.name} 
                     className="w-full h-full object-cover object-top"
                     onError={(e) => { (e.currentTarget as HTMLImageElement).src = "https://via.placeholder.com/800x600?text=Team+Image"; }}
                   />
-                  <div className="absolute bottom-0 left-0 w-full bg-black/80 p-6 pt-20">
-                    <h3 className="text-white font-serif font-bold text-2xl">{member.name}</h3>
-                    <p className="text-secondary font-medium">{member.role}</p>
-                  </div>
+                </div>
+                <div className="p-4 text-center bg-white">
+                  <h3 className="font-bold text-primary">{member.name}</h3>
+                  <p className="text-sm text-muted-foreground">{member.role}</p>
                 </div>
                 <div className="p-6 flex-grow bg-muted/30">
                   <p className="text-muted-foreground leading-relaxed">
