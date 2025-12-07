@@ -52,13 +52,13 @@ export default function ProductCard({ product }: ProductCardProps) {
         
         <div className="pt-4 border-t border-border mt-auto flex items-center justify-between">
           <div className="text-lg font-bold text-primary">
-            {product.price 
-              ? (isPriceNumber ? `R${product.price}` : product.price)
-              : <span className="text-muted-foreground text-sm font-normal">Contact for Pricing</span>
-            }
+          {product.price 
+            ? (isPriceNumber ? `R${product.price}` : product.price)
+            : <span className="text-muted-foreground text-sm font-normal">Contact for Pricing</span>
+          }
           </div>
           
-          {isPriceNumber ? (
+          <div className="flex items-center gap-2">
             <Button 
               size="sm" 
               className="rounded-none bg-primary text-white hover:bg-secondary hover:text-primary transition-colors"
@@ -67,13 +67,14 @@ export default function ProductCard({ product }: ProductCardProps) {
               <ShoppingCart className="w-4 h-4 mr-2" />
               Add
             </Button>
-          ) : (
-             <Link href="/contact">
-               <Button size="sm" variant="outline" className="rounded-none border-primary text-primary hover:bg-primary hover:text-white cursor-pointer">
-                 Enquire <ArrowRight className="w-4 h-4 ml-2" />
-               </Button>
-             </Link>
-          )}
+            {!isPriceNumber && (
+              <Link href="/contact">
+                <Button size="sm" variant="outline" className="rounded-none border-primary text-primary hover:bg-primary hover:text-white cursor-pointer">
+                  Enquire <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </motion.div>

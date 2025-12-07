@@ -125,7 +125,7 @@ export default function Shop() {
                           </span>
                         </div>
                         <div className="self-end ml-auto">
-                          {typeof p.price === 'number' ? (
+                          <div className="flex items-center gap-2">
                             <Button
                               size="sm"
                               className="rounded-none bg-primary text-white hover:bg-secondary hover:text-primary"
@@ -133,18 +133,19 @@ export default function Shop() {
                             >
                               <ShoppingCart className="w-4 h-4 mr-2" /> Add
                             </Button>
-                          ) : (
-                            <Button
-                              size="sm"
-                              variant="outline"
-                              className="rounded-none border-primary text-primary hover:bg-primary hover:text-white"
-                              asChild
-                            >
-                              <a href="/contact" className="cursor-pointer">
-                                Enquire <ArrowRight className="w-4 h-4 ml-2" />
-                              </a>
-                            </Button>
-                          )}
+                            {typeof p.price !== 'number' && (
+                              <Button
+                                size="sm"
+                                variant="outline"
+                                className="rounded-none border-primary text-primary hover:bg-primary hover:text-white"
+                                asChild
+                              >
+                                <a href="/contact" className="cursor-pointer">
+                                  Enquire <ArrowRight className="w-4 h-4 ml-2" />
+                                </a>
+                              </Button>
+                            )}
+                          </div>
                         </div>
                        </div>
                      ))}

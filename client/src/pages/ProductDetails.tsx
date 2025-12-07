@@ -38,11 +38,9 @@ export default function ProductDetails() {
           <p className="text-muted-foreground mb-6">{product.description}</p>
           <div className="text-lg font-bold text-primary mb-6">{typeof product.price === 'number' ? `R${product.price}` : product.price}</div>
           <div className="flex gap-3">
-            {typeof product.price === 'number' && (
-              <Button className="bg-primary text-white hover:bg-secondary hover:text-primary cursor-pointer" onClick={() => addToCart(product)}>
-                <ShoppingCart className="w-4 h-4 mr-2" /> Add to Cart
-              </Button>
-            )}
+            <Button className="bg-primary text-white hover:bg-secondary hover:text-primary cursor-pointer" onClick={() => addToCart(product)}>
+              <ShoppingCart className="w-4 h-4 mr-2" /> Add to Cart
+            </Button>
           <Link href="/cart">
             <Button className="cursor-pointer">Go to Cart</Button>
           </Link>
