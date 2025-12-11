@@ -9,7 +9,8 @@ export default function Blog() {
       title: "Polaris Magazine",
       description: "Discover insights and strategies for navigating the modern business landscape. This comprehensive guide covers essential topics for entrepreneurs and business leaders.",
       image: "/assets/Polaris-Package-300x300.jpg",
-      href: "/assets/Polaris%20Magazine.pdf",
+      href: "/assets/Polaris Magazine.pdf",
+      filename: "Polaris Magazine.pdf",
       category: "Business Insights",
     },
     {
@@ -17,7 +18,8 @@ export default function Blog() {
       title: "Perseus Magazine",
       description: "A deep dive into innovation and technology trends shaping South African businesses. Learn how to leverage cutting-edge solutions for growth.",
       image: "/assets/Perseus-Package-300x300.jpg",
-      href: "/assets/Perseus%20Magazine.pdf",
+      href: "/assets/Perseus Magazine.pdf",
+      filename: "Perseus Magazine.pdf",
       category: "Technology",
     },
     {
@@ -25,7 +27,8 @@ export default function Blog() {
       title: "10 Risks Crippling Our Country",
       description: "An analytical exploration of the critical challenges facing South Africa's economy and practical strategies for businesses to navigate uncertainty.",
       image: "/assets/10-risks-crippling-our-country-cover.png",
-      href: "/assets/10%20Risks%20Crippling%20Our%20Country.pdf",
+      href: "/assets/10 Risks Crippling Our Country.pdf",
+      filename: "10 Risks Crippling Our Country.pdf",
       category: "Economic Analysis",
     },
   ];
@@ -110,7 +113,7 @@ export default function Blog() {
                     </a>
                     <a 
                       href={post.href} 
-                      download
+                      download={post.filename}
                       className="shrink-0"
                     >
                       <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
