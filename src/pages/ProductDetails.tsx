@@ -3,7 +3,6 @@ import { PRODUCTS } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/lib/cart-context";
 import { ShoppingCart, ArrowLeft } from "lucide-react";
-const PAYFAST_URL = "https://payment.payfast.io/eng/process/payment/e91b8047-eb11-43d7-872b-95861c1d0377";
 import { Link } from "wouter";
 
 export default function ProductDetails() {
@@ -51,13 +50,6 @@ export default function ProductDetails() {
               <Button className="bg-primary text-white hover:bg-secondary hover:text-primary cursor-pointer" onClick={() => addToCart(product)}>
                 <ShoppingCart className="w-4 h-4" /> Add to Cart
               </Button>
-              <a
-                href={PAYFAST_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button variant="outline" className="cursor-pointer">Buy Now</Button>
-              </a>
               <Link href="/cart">
                 <Button className="cursor-pointer">Go to Cart</Button>
               </Link>

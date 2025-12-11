@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import { fileURLToPath } from "url";
-import { componentTagger } from "lovable-tagger";
+import { metaImagesPlugin } from "./vite-plugin-meta-images";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -11,11 +11,11 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     tailwindcss(),
-    mode === 'development' && componentTagger(),
-  ].filter(Boolean),
+    metaImagesPlugin(),
+  ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      "@": path.resolve(__dirname, "client", "src"),
       "@shared": path.resolve(__dirname, "shared"),
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, "dist"),
+    outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
   },
   server: {

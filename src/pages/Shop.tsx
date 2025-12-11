@@ -5,7 +5,6 @@ import ProductCard from "@/components/ui/product-card";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp, Filter, ShoppingCart, ArrowRight } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
-const PAYFAST_URL = "https://payment.payfast.io/eng/process/payment/e91b8047-eb11-43d7-872b-95861c1d0377";
 import * as Accordion from "@radix-ui/react-accordion";
 
 export default function Shop() {
@@ -146,15 +145,6 @@ export default function Shop() {
                                 </a>
                               </Button>
                             )}
-                            <a
-                              href={PAYFAST_URL}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <Button size="sm" variant="outline" className="rounded-none cursor-pointer">
-                                Buy Now
-                              </Button>
-                            </a>
                           </div>
                         </div>
                        </div>
