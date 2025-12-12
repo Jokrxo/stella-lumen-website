@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SectionHeader from "@/components/ui/section-header";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Download, AlertTriangle, FileText, ShoppingCart } from "lucide-react";
 import { Link, useLocation } from "wouter";
@@ -28,12 +29,14 @@ export default function TrialProducts() {
 
   return (
     <div className="pt-20 pb-20">
-      <section className="bg-primary py-16 text-white">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Trial Products</h1>
-          <p className="max-w-2xl mx-auto text-white/80">
-            Experience the power of Rigel Business before you buy.
-          </p>
+      <section className="bg-muted py-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeader
+            title="Trial Products"
+            subtitle="Experience the power of Rigel Business before you buy."
+            align="center"
+            size="xl"
+          />
         </div>
       </section>
 

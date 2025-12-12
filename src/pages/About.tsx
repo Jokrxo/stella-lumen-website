@@ -18,13 +18,14 @@ export default function About() {
 
   return (
     <div className="pt-20 pb-10">
-      {/* Header */}
       <section className="bg-muted py-16">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">About Us</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Building a legacy of excellence since {COMPANY_INFO.founded}.
-          </p>
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeader
+            title="About Us"
+            subtitle={`Building a legacy of excellence since ${COMPANY_INFO.founded}.`}
+            align="center"
+            size="xl"
+          />
         </div>
       </section>
 

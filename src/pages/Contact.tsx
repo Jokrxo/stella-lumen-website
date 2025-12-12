@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { COMPANY_INFO } from "@/lib/data";
+import SectionHeader from "@/components/ui/section-header";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -42,11 +43,13 @@ export default function Contact() {
   return (
     <div className="pt-20 pb-20">
       <section className="bg-muted py-16">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Contact Us</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Get in touch with our team to discuss your business needs.
-          </p>
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeader
+            title="Contact Us"
+            subtitle="Get in touch with our team to discuss your business needs."
+            align="center"
+            size="xl"
+          />
         </div>
       </section>
 

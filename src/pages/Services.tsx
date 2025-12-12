@@ -8,14 +8,14 @@ import * as Icons from "lucide-react";
 export default function ServicesPage() {
   return (
     <div className="pt-20 pb-20">
-      <section className="bg-primary py-20 text-white relative overflow-hidden">
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Services</h1>
-            <p className="text-white/80 text-xl">
-              Comprehensive solutions tailored to elevate your business performance and governance standards.
-            </p>
-          </div>
+      <section className="bg-muted py-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeader
+            title="Our Services"
+            subtitle="Comprehensive solutions tailored to elevate your business performance and governance standards."
+            align="center"
+            size="xl"
+          />
         </div>
       </section>
 

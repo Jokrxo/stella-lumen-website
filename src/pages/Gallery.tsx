@@ -2,17 +2,20 @@ import { useState } from "react";
 import { GALLERY_IMAGES, BOARDGAME_IMAGES } from "@/lib/data";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
+import SectionHeader from "@/components/ui/section-header";
 import { ZoomIn } from "lucide-react";
 
 export default function Gallery() {
   return (
     <div className="pt-20 pb-20">
-      <section className="bg-primary py-16 text-white">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Gallery</h1>
-          <p className="max-w-2xl mx-auto text-white/80">
-            Capturing moments of innovation, collaboration, and success.
-          </p>
+      <section className="bg-muted py-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeader
+            title="Gallery"
+            subtitle="Capturing moments of innovation, collaboration, and success."
+            align="center"
+            size="xl"
+          />
         </div>
       </section>
 

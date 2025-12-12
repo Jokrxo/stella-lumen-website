@@ -5,7 +5,7 @@ import SectionHeader from "@/components/ui/section-header";
 export default function Team() {
   return (
     <div className="pt-20 pb-20">
-      <section className="bg-primary py-20 text-white">
+      <section className="bg-muted py-16">
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeader
             title="Our Team"

@@ -22,9 +22,9 @@ export default function Cart() {
 
   return (
     <div className="pt-20 pb-20">
-      <section className="bg-muted py-10 mb-10">
+      <section className="bg-muted py-16 mb-10">
         <div className="container mx-auto px-4 md:px-6">
-           <SectionHeader title="Shopping Cart" size="lg" />
+           <SectionHeader title="Shopping Cart" align="center" size="xl" />
         </div>
       </section>
 

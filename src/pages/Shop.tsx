@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PRODUCTS } from "@/lib/data";
 import ProductCard from "@/components/ui/product-card";
+import SectionHeader from "@/components/ui/section-header";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp, Filter, ShoppingCart, ArrowRight } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
@@ -28,11 +29,13 @@ export default function Shop() {
   return (
     <div className="pt-20 pb-20">
       <section className="bg-muted py-16">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Product Catalogue</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore our comprehensive range of financial and governance solutions.
-          </p>
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeader
+            title="Product Catalogue"
+            subtitle="Explore our comprehensive range of financial and governance solutions."
+            align="center"
+            size="xl"
+          />
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import SectionHeader from "@/components/ui/section-header";
 import { INTERNS } from "@/lib/data";
 import { Quote, BookOpen, Briefcase, Users, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -30,13 +31,14 @@ export default function Internship() {
 
   return (
     <div className="pt-20 pb-20">
-      <section className="bg-primary py-20 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center opacity-10 mix-blend-overlay" />
-        <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Internship Program</h1>
-          <p className="max-w-2xl mx-auto text-white/80 text-xl">
-            Launch your career with Stella Lumen. We nurture the next generation of industry leaders.
-          </p>
+      <section className="bg-muted py-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeader
+            title="Internship Program"
+            subtitle="Launch your career with Stella Lumen. We nurture the next generation of industry leaders."
+            align="center"
+            size="xl"
+          />
         </div>
       </section>
 
